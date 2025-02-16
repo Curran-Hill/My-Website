@@ -80,9 +80,12 @@ if (-not (Test-Path "images.py")) {
 
 # Execute the Python script
 try {
+    Write-Host "Executing Python script images.py..."
     & $pythonCommand images.py
+    Write-Host "Python script executed successfully."
 } catch {
     Write-Error "Failed to process image links."
+    Write-Error $_.Exception.Message
     exit 1
 }
 
