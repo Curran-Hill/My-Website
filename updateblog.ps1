@@ -5,7 +5,7 @@ $sourcePath = "C:\Users\curra\OneDrive\Documents\Obsidian Vault\My Website"
 $destinationPath = "C:\Users\curra\OneDrive\Documents\My Website\Curran Hill\content\posts"
 
 # Set Github repo 
-$myrepo = "https://github.com/Curran-Hill/My-Website"
+$myrepo = "git@github.com:Curran-Hill/My-Website.git"
 
 # Set error handling
 $ErrorActionPreference = "Stop"
