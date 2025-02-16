@@ -11,12 +11,14 @@ static_images_dir = r"C:\Users\curra\OneDrive\Documents\My Website\Curran Hill\s
 for filename in os.listdir(posts_dir):
     if filename.endswith(".md"):
         filepath = os.path.join(posts_dir, filename)
+        print(f"Processing file: {filepath}")
         
         with open(filepath, "r", encoding="utf-8") as file:
             content = file.read()
         
         # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
         images = re.findall(r'\[\[([^]]*\.png)\]\]', content)
+        print(f"Found images: {images}")
         
         # Step 3: Replace image links and ensure URLs are correctly formatted
         for image in images:
@@ -27,7 +29,10 @@ for filename in os.listdir(posts_dir):
             # Step 4: Copy the image to the Hugo static/images directory if it exists
             image_source = os.path.join(attachments_dir, image)
             if os.path.exists(image_source):
+                print(f"Copying {image_source} to {static_images_dir}")
                 shutil.copy(image_source, static_images_dir)
+            else:
+                print(f"Image not found: {image_source}")
 
         # Step 5: Write the updated content back to the markdown file
         with open(filepath, "w", encoding="utf-8") as file:
