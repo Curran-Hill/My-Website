@@ -9,6 +9,6 @@ tags:
 lorem ipsum toowdfdfsg sv
 
 
-!(/images/test.png)
+![Image Description](/images/test.png)
 
-!(/images/paper.png)
+![Image Description](/images/paper.png)
