@@ -1,4 +1,5 @@
-baseURL = "https://curran-hill.github.io/My-Website/"
+# baseURL = "https://curran-hill.github.io/My-Website/"
+relativeURLs = true
 title = "Curran Hill"
 theme = "hugo-coder"
 languageCode = "en"
