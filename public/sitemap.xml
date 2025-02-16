@@ -2,28 +2,28 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.example.com/tags/curran/</loc>
+    <loc>https://curran-hill.github.io/My-Website/tags/curran/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/</loc>
+    <loc>https://curran-hill.github.io/My-Website/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/posts/</loc>
+    <loc>https://curran-hill.github.io/My-Website/posts/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/tags/</loc>
+    <loc>https://curran-hill.github.io/My-Website/tags/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/tags/test/</loc>
+    <loc>https://curran-hill.github.io/My-Website/tags/test/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/posts/blog/test/</loc>
+    <loc>https://curran-hill.github.io/My-Website/posts/blog/test/</loc>
     <lastmod>2025-02-16T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://www.example.com/authors/</loc>
+    <loc>https://curran-hill.github.io/My-Website/authors/</loc>
   </url><url>
-    <loc>http://www.example.com/categories/</loc>
+    <loc>https://curran-hill.github.io/My-Website/categories/</loc>
   </url><url>
-    <loc>http://www.example.com/series/</loc>
+    <loc>https://curran-hill.github.io/My-Website/series/</loc>
   </url>
 </urlset>
