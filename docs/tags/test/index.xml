@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Test on Curran Hill</title>
-    <link>https://curran-hill.github.io/My-Website/tags/test/</link>
+    <link>https://curran-hill.github.io/My-Website/docs/tags/test/</link>
     <description>Recent content in Test on Curran Hill</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://curran-hill.github.io/My-Website/tags/test/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://curran-hill.github.io/My-Website/docs/tags/test/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Test</title>
-      <link>https://curran-hill.github.io/My-Website/posts/test/</link>
+      <link>https://curran-hill.github.io/My-Website/docs/posts/test/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>https://curran-hill.github.io/My-Website/posts/test/</guid>
-      <description>&lt;h1 id=&#34;testing123&#34;&gt;&#xA;  testing123&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#testing123&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;lorem ipsum toowdfdfsg sv&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://curran-hill.github.io/My-Website/images/test.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://curran-hill.github.io/My-Website/images/paper.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
+      <guid>https://curran-hill.github.io/My-Website/docs/posts/test/</guid>
+      <description>&lt;h1 id=&#34;testing123&#34;&gt;&#xA;  testing123&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#testing123&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;lorem ipsum toowdfdfsg sv&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://curran-hill.github.io/My-Website/docs/images/test.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://curran-hill.github.io/My-Website/docs/images/paper.png&#34; alt=&#34;Image Description&#34;&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
