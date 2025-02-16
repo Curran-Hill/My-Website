@@ -7,4 +7,4 @@ tags:
 ---
 # testing123
 lorem ipsum toowdfdfsg sv
-![Image Description](/images/test.png)
+![Image Description](static/images/test.png)
