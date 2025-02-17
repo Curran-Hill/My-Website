@@ -9,17 +9,38 @@
     <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Curran</title>
-      <link>/tags/curran/</link>
+      <title>GitHub</title>
+      <link>/tags/github/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/curran/</guid>
+      <guid>/tags/github/</guid>
       <description></description>
     </item>
     <item>
-      <title>Test</title>
-      <link>/tags/test/</link>
+      <title>Hugo</title>
+      <link>/tags/hugo/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>/tags/test/</guid>
+      <guid>/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Obsidian</title>
+      <link>/tags/obsidian/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/obsidian/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Powershell</title>
+      <link>/tags/powershell/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Python</title>
+      <link>/tags/python/</link>
+      <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>/tags/python/</guid>
       <description></description>
     </item>
   </channel>

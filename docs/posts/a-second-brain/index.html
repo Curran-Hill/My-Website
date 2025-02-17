@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>
+  Hosting a Blog on Github using Hugo · Curran Hill
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Curran Hill">
+<meta name="description" content="
+  The Inspiration
+  
+    
+    Link to heading
+  
+
+NetworkChuck has some of my favorite videos on YouTube. In a somewhat recent video he details how to start a blog using Obsidian, Hugo, GitHub, and Hostinger.
+
+Link
+However, I like free. Because of this, Hostinger is out of the question as it is a paid website hosting source. But you&rsquo;re reading this now aren&rsquo;t you? So how did I do it? In this article, it is all laid out for you.">
+<meta name="keywords" content="blog,security,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Hosting a Blog on Github using Hugo">
+  <meta name="twitter:description" content="The Inspiration Link to heading NetworkChuck has some of my favorite videos on YouTube. In a somewhat recent video he details how to start a blog using Obsidian, Hugo, GitHub, and Hostinger.
+Link
+However, I like free. Because of this, Hostinger is out of the question as it is a paid website hosting source. But you’re reading this now aren’t you? So how did I do it? In this article, it is all laid out for you.">
+
+<meta property="og:url" content="/posts/a-second-brain/">
+  <meta property="og:site_name" content="Curran Hill">
+  <meta property="og:title" content="Hosting a Blog on Github using Hugo">
+  <meta property="og:description" content="The Inspiration Link to heading NetworkChuck has some of my favorite videos on YouTube. In a somewhat recent video he details how to start a blog using Obsidian, Hugo, GitHub, and Hostinger.
+Link
+However, I like free. Because of this, Hostinger is out of the question as it is a paid website hosting source. But you’re reading this now aren’t you? So how did I do it? In this article, it is all laid out for you.">
+  <meta property="og:locale" content="en">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-02-16T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-16T00:00:00+00:00">
+    <meta property="article:tag" content="Powershell">
+    <meta property="article:tag" content="Python">
+    <meta property="article:tag" content="Obsidian">
+    <meta property="article:tag" content="Hugo">
+    <meta property="article:tag" content="GitHub">
+
+
+
+
+<link rel="canonical" href="../../posts/a-second-brain/">
+
+
+<link rel="preload" href="../../fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../../fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="../../css/coder.min.7763f8bc6341ecf82378e867c285e1549abb063a899be313ccd25dbfcd24fa7d.css" integrity="sha256-d2P4vGNB7PgjeOhnwoXhVJq7BjqJm&#43;MTzNJdv80k&#43;n0=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="../../css/coder-dark.min.a00e6364bacbc8266ad1cc81230774a1397198f8cfb7bcba29b7d6fcb54ce57f.css" integrity="sha256-oA5jZLrLyCZq0cyBIwd0oTlxmPjPt7y6KbfW/LVM5X8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="../../images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="../../images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="../../images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="../../images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../../images/apple-touch-icon.png">
+
+<link rel="manifest" href="../../site.webmanifest">
+<link rel="mask-icon" href="../../images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-dark">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="../../">
+      Curran Hill
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="../../about/">About</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="../../posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="../../projects/">Projects</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="../../contact/">Contact me</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="../../posts/a-second-brain/">
+              Hosting a Blog on Github using Hugo
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-02-16T00:00:00Z">
+                February 16, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              6-minute read
+            </span>
+          </div>
+          
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="../../tags/powershell/">Powershell</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="../../tags/python/">Python</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="../../tags/obsidian/">Obsidian</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="../../tags/hugo/">Hugo</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="../../tags/github/">GitHub</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <h2 id="the-inspiration">
+  The Inspiration
+  <a class="heading-link" href="#the-inspiration">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><a href="https://youtube.com/@networkchuck?si=qzhuKK4R_Zb0Vtxx"  class="external-link" target="_blank" rel="noopener">NetworkChuck</a> has some of my favorite videos on YouTube. In a somewhat recent video he details how to start a blog using Obsidian, Hugo, GitHub, and Hostinger.</p>
+<p><img src="../../images/Obsidian%20Blog%20vid.png" alt="Image Description">
+<a href="https://youtu.be/dnE7c0ELEH8?si=CCGiFJju6hQ8vkOE"  class="external-link" target="_blank" rel="noopener">Link</a></p>
+<p>However, I like free. Because of this, Hostinger is out of the question as it is a paid website hosting source. But you&rsquo;re reading this now aren&rsquo;t you? So how did I do it? In this article, it is all laid out for you.</p>
+<hr>
+<h2 id="disclaimer">
+  Disclaimer
+  <a class="heading-link" href="#disclaimer">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>The majority of the steps outlines in this article are the same or very similar the NetworkChuck&rsquo;s video. <strong>All credit goes to him and you should really check him out</strong> I also use two scripts, one Python and one PowerShell, and they are versions of his scripts with tiny tiny tweaks. Finally, <strong>These instructions are for Windows only</strong>, Mac and Linux systems have a different set of instructions.</p>
+<hr>
+<h2 id="setting-up-obsidian">
+  Setting up Obsidian
+  <a class="heading-link" href="#setting-up-obsidian">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Assuming you already have Obsidian installed, all you need to do is create a new folder for your posts to live in. You can name this anything, but I recommend something like &ldquo;Blog&rdquo; or &ldquo;Posts&rdquo;.</p>
+<p>Here is mine:</p>
+<p><img src="../../images/ObiFileStruc.png" alt="Image Description"></p>
+<hr>
+<h2 id="setting-up-hugo">
+  Setting up Hugo
+  <a class="heading-link" href="#setting-up-hugo">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Before doing anything you need to make sure you have installed <a href="https://github.com/git-guides/install-git"  class="external-link" target="_blank" rel="noopener">Git</a> and <a href="https://go.dev/dl/"  class="external-link" target="_blank" rel="noopener">Go</a>.</p>
+<p>Next install <a href="https://gohugo.io/installation/"  class="external-link" target="_blank" rel="noopener">Hugo</a>.</p>
+<p>Then create your site by executing:</p>
+<pre tabindex="0"><code>hugo new site websitename
+cd website
+</code></pre><p>Now it&rsquo;s time to pick your <a href="https://themes.gohugo.io/"  class="external-link" target="_blank" rel="noopener">Hugo theme</a>. Pick any theme you want and follow the theme instructions to download.</p>
+<p>Most every theme will come with a config file usually labeled <strong>.toml</strong> or <strong>.yaml</strong>. Edit these as needed.</p>
+<p>Two necessary edits to the config file are as follows:</p>
+<ul>
+<li>
+<p>comment out the <em>baseURL</em> line and add <em>relativeURLs = true</em>
+<img src="../../images/URLs%20config.png" alt="Image Description"></p>
+</li>
+<li>
+<p>add or edit the <em>publishDir = &ldquo;public</em> to <em>publishDir = docs</em>
+<img src="../../images/publicTOdocs.png" alt="Image Description"></p>
+</li>
+</ul>
+<hr>
+<h2 id="test-hugo">
+  Test Hugo
+  <a class="heading-link" href="#test-hugo">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Run this command in your website&rsquo;s directory to verify that everything is working:</p>
+<pre tabindex="0"><code>hugo server -t themename
+</code></pre><hr>
+<h2 id="adding-frontmatter-to-obsidian">
+  Adding Frontmatter to Obsidian
+  <a class="heading-link" href="#adding-frontmatter-to-obsidian">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Without frontmatter, your posts will have no title and look a bit empty.</p>
+<p>To add frontmatter, copy and paste:</p>
+<pre tabindex="0"><code>---
+title: blogtitle
+date: 2024-11-06
+draft: false
+tags:
+  - tag1
+  - tag2
+---
+</code></pre><p>and change information as needed.</p>
+<hr>
+<h2 id="handling-images">
+  Handling Images
+  <a class="heading-link" href="#handling-images">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As they are now, your images will not cleanly transfer from Obsidian to your blog. To fix this we will run a Python script. Make sure that in Obsidian you have a set destination for all attachments, like this:
+<img src="../../images/ObiAttachments.png" alt="Image Description">
+Also, in you websites /static folder, create a subfolder called /images</p>
+<p>For the Python script, in your websites main directory create a file called <em>images.py</em> and paste this:</p>
+<pre tabindex="0"><code>import os
+
+import re
+
+import shutil
+
+  
+
+# Paths (using raw strings to handle Windows backslashes correctly)
+
+posts_dir = r&#34;C:\Path\to\blog\posts\folder&#34;
+
+attachments_dir = r&#34;C:\Pat\to\Obsidian\attachments\folder&#34;
+
+static_images_dir = r&#34;C:Path\to\static\images&#34;
+
+  
+
+# Step 1: Process each markdown file in the posts directory
+
+for filename in os.listdir(posts_dir):
+
+    if filename.endswith(&#34;.md&#34;):
+
+        filepath = os.path.join(posts_dir, filename)
+
+        print(f&#34;Processing file: {filepath}&#34;)
+
+        with open(filepath, &#34;r&#34;, encoding=&#34;utf-8&#34;) as file:
+
+            content = file.read()
+
+        # Step 2: Find all image links in the format ![Image Description](/images/Pasted%20image%20...%20.png)
+
+        images = re.findall(r&#39;\[\[([^]]*\.png)\]\]&#39;, content)
+
+        print(f&#34;Found images: {images}&#34;)
+
+        # Step 3: Replace image links and ensure URLs are correctly formatted
+
+        for image in images:
+
+  
+
+            # Prepare the Markdown-compatible link with %20 replacing spaces
+
+            markdown_image = f&#34;![Image Description](/images/{image.replace(&#39; &#39;, &#39;%20&#39;)})&#34;
+
+            content = content.replace(f&#34;![[{image}]]&#34;, markdown_image)
+
+            # Step 4: Copy the image to the Hugo static/images directory if it exists
+
+            image_source = os.path.join(attachments_dir, image)
+
+            if os.path.exists(image_source):
+
+                print(f&#34;Copying {image_source} to {static_images_dir}&#34;)
+
+                shutil.copy(image_source, static_images_dir)
+
+            else:
+
+                print(f&#34;Image not found: {image_source}&#34;)
+
+  
+
+        # Step 5: Write the updated content back to the markdown file
+
+        with open(filepath, &#34;w&#34;, encoding=&#34;utf-8&#34;) as file:
+
+            file.write(content)
+
+  
+
+print(&#34;Markdown files processed and images copied successfully.&#34;)
+</code></pre><h3 id="remember-to-edit-the-file-paths-present-at-the-top-of-the-script">
+  <strong>Remember to edit the file paths present at the top of the script!</strong>
+  <a class="heading-link" href="#remember-to-edit-the-file-paths-present-at-the-top-of-the-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<hr>
+<h2 id="git-github-and-git-authenticated">
+  Git GitHub and Git Authenticated
+  <a class="heading-link" href="#git-github-and-git-authenticated">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>After creating a GitHub account if you don&rsquo;t already have one, create a repository. Then run:</p>
+<pre tabindex="0"><code>ssh-keygen -t rsa -b 4096 -C &#34;example@email.com&#34;
+</code></pre><hr>
+<h2 id="big-ol-script">
+  Big Ol&rsquo; Script
+  <a class="heading-link" href="#big-ol-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This script will automate the entire process. From Obsidian all the way to GitHub. Name the script something like <em>updateblog.ps1</em></p>
+<pre tabindex="0"><code># PowerShell Script for Windows
+
+  
+
+# Set variables for Obsidian to Hugo copy
+
+$sourcePath = &#34;C:\Path\to\your\obsidian\blog\folder&#34;
+
+$destinationPath = &#34;C:\Path\to\your\website\posts\folder&#34;
+
+  
+
+# Set Github repo URL
+
+$myrepo = &#34;git@github.com:GitHubUsername/Repository.git&#34;
+
+  
+
+# Set error handling
+
+$ErrorActionPreference = &#34;Stop&#34;
+
+Set-StrictMode -Version Latest
+
+  
+
+# Change to the script&#39;s directory
+
+$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+
+Set-Location $ScriptDir
+
+  
+
+# Check for required commands
+
+$requiredCommands = @(&#39;git&#39;, &#39;hugo&#39;)
+
+  
+
+# Check for Python command (python or python3)
+
+if (Get-Command &#39;python&#39; -ErrorAction SilentlyContinue) {
+
+    $pythonCommand = &#39;python&#39;
+
+} elseif (Get-Command &#39;python3&#39; -ErrorAction SilentlyContinue) {
+
+    $pythonCommand = &#39;python3&#39;
+
+} else {
+
+    Write-Error &#34;Python is not installed or not in PATH.&#34;
+
+    exit 1
+
+}
+
+  
+
+foreach ($cmd in $requiredCommands) {
+
+    if (-not (Get-Command $cmd -ErrorAction SilentlyContinue)) {
+
+        Write-Error &#34;$cmd is not installed or not in PATH.&#34;
+
+        exit 1
+
+    }
+
+}
+
+  
+
+# Step 1: Check if Git is initialized, and initialize if necessary
+
+if (-not (Test-Path &#34;.git&#34;)) {
+
+    Write-Host &#34;Initializing Git repository...&#34;
+
+    git init
+
+    git remote add origin $myrepo
+
+} else {
+
+    Write-Host &#34;Git repository already initialized.&#34;
+
+    $remotes = git remote
+
+    if (-not ($remotes -contains &#39;origin&#39;)) {
+
+        Write-Host &#34;Adding remote origin...&#34;
+
+        git remote add origin $myrepo
+
+    }
+
+}
+
+  
+
+# Step 2: Sync posts from Obsidian to Hugo content folder using Robocopy
+
+Write-Host &#34;Syncing posts from Obsidian...&#34;
+
+  
+
+if (-not (Test-Path $sourcePath)) {
+
+    Write-Error &#34;Source path does not exist: $sourcePath&#34;
+
+    exit 1
+
+}
+
+  
+
+if (-not (Test-Path $destinationPath)) {
+
+    Write-Error &#34;Destination path does not exist: $destinationPath&#34;
+
+    exit 1
+
+}
+
+  
+
+# Use Robocopy to mirror the directories
+
+$robocopyOptions = @(&#39;/MIR&#39;, &#39;/Z&#39;, &#39;/W:5&#39;, &#39;/R:3&#39;)
+
+$robocopyResult = robocopy $sourcePath $destinationPath @robocopyOptions
+
+  
+
+if ($LASTEXITCODE -ge 8) {
+
+    Write-Error &#34;Robocopy failed with exit code $LASTEXITCODE&#34;
+
+    exit 1
+
+}
+
+  
+
+# Step 3: Process Markdown files with Python script to handle image links
+
+Write-Host &#34;Processing image links in Markdown files...&#34;
+
+if (-not (Test-Path &#34;images.py&#34;)) {
+
+    Write-Error &#34;Python script images.py not found.&#34;
+
+    exit 1
+
+}
+
+  
+
+# Execute the Python script
+
+try {
+
+    Write-Host &#34;Executing Python script images.py...&#34;
+
+    &amp; $pythonCommand images.py
+
+    Write-Host &#34;Python script executed successfully.&#34;
+
+} catch {
+
+    Write-Error &#34;Failed to process image links.&#34;
+
+    Write-Error $_.Exception.Message
+
+    exit 1
+
+}
+
+  
+
+# Step 4: Build the Hugo site
+
+Write-Host &#34;Building the Hugo site...&#34;
+
+try {
+
+    hugo
+
+} catch {
+
+    Write-Error &#34;Hugo build failed.&#34;
+
+    exit 1
+
+}
+
+  
+
+# Step 5: Add changes to Git
+
+Write-Host &#34;Staging changes for Git...&#34;
+
+$hasChanges = (git status --porcelain) -ne &#34;&#34;
+
+if (-not $hasChanges) {
+
+    Write-Host &#34;No changes to stage.&#34;
+
+} else {
+
+    git add .
+
+}
+
+  
+
+# Step 6: Commit changes with a dynamic message
+
+$commitMessage = &#34;New Blog Post on $(Get-Date -Format &#39;yyyy-MM-dd HH:mm:ss&#39;)&#34;
+
+$hasStagedChanges = (git diff --cached --name-only) -ne &#34;&#34;
+
+if (-not $hasStagedChanges) {
+
+    Write-Host &#34;No changes to commit.&#34;
+
+} else {
+
+    Write-Host &#34;Committing changes...&#34;
+
+    git commit -m &#34;$commitMessage&#34;
+
+}
+
+  
+
+# Step 7: Push all changes to the main branch
+
+Write-Host &#34;Deploying to GitHub Master...&#34;
+
+try {
+
+    git push origin master
+
+} catch {
+
+    Write-Error &#34;Failed to push to Master branch.&#34;
+
+    exit 1
+
+}
+
+  
+
+Write-Host &#34;All done! Site synced, processed, committed, built, and deployed.&#34;
+</code></pre><h3 id="remember-to-edit-the-file-paths--github-repo-present-at-the-top-of-the-script">
+  <strong>Remember to edit the file paths &amp; GitHub Repo present at the top of the script!</strong>
+  <a class="heading-link" href="#remember-to-edit-the-file-paths--github-repo-present-at-the-top-of-the-script">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Make sure this script is in the same directory as the <strong>images.py</strong> script from earlier and</p>
+<hr>
+<h2 id="github-pages">
+  GitHub Pages
+  <a class="heading-link" href="#github-pages">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>After running the  mega script using</p>
+<pre tabindex="0"><code>.\updateblog.ps1
+</code></pre><p>go to your GitHub repo and navigate to the repository settings. You are looking for the &ldquo;Pages&rdquo; tab.
+<img src="../../images/pagesSS.png" alt="Image Description"></p>
+<p>Under <strong>Build and Deployment</strong> choose <em>Deploy from a branch</em>
+<img src="../../images/frombranch.png" alt="Image Description"></p>
+<p>Then choose <em>master</em> and <em>/docs</em>
+<img src="../../images/deployment.png" alt="Image Description"></p>
+<p>And finally, visit your site!
+<img src="../../images/visit.png" alt="Image Description"></p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     Curran Hill 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="../../js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

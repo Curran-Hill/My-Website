@@ -1,4 +1,4 @@
-# baseURL = "https://curran-hill.github.io/My-Website/"
+# baseURL = "/"
 relativeURLs = true
 title = "Curran Hill"
 theme = "hugo-coder"
