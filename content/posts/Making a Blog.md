@@ -453,13 +453,20 @@ After running the  mega script using
 .\updateblog.ps1
 ```
 go to your GitHub repo and navigate to the repository settings. You are looking for the "Pages" tab.
+
 ![Image Description](/images/pagesSS.png)
 
+
 Under **Build and Deployment** choose *Deploy from a branch*
+
 ![Image Description](/images/frombranch.png)
 
+
 Then choose *master* and */docs*
+
 ![Image Description](/images/deployment.png)
 
+
 And finally, visit your site!
+
 ![Image Description](/images/visit.png)
