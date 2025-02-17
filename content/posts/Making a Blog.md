@@ -1,5 +1,5 @@
 ---
-title: Hosting a Blog on Github using Hugo
+title: Hosting a Blog on Github using Hugo || Having a Second Brain
 date: 2025-02-16
 tags:
   - Powershell

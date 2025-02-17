@@ -9,10 +9,10 @@
     <lastBuildDate>Sun, 16 Feb 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hosting a Blog on Github using Hugo</title>
-      <link>/posts/a-second-brain/</link>
+      <title>Hosting a Blog on Github using Hugo || Having a Second Brain</title>
+      <link>/posts/making-a-blog/</link>
       <pubDate>Sun, 16 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>/posts/a-second-brain/</guid>
+      <guid>/posts/making-a-blog/</guid>
       <description>&lt;h2 id=&#34;the-inspiration&#34;&gt;&#xA;  The Inspiration&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#the-inspiration&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://youtube.com/@networkchuck?si=qzhuKK4R_Zb0Vtxx&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;NetworkChuck&lt;/a&gt; has some of my favorite videos on YouTube. In a somewhat recent video he details how to start a blog using Obsidian, Hugo, GitHub, and Hostinger.&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;../../images/Obsidian%20Blog%20vid.png&#34; alt=&#34;Image Description&#34;&gt;&#xA;&lt;a href=&#34;https://youtu.be/dnE7c0ELEH8?si=CCGiFJju6hQ8vkOE&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Link&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;However, I like free. Because of this, Hostinger is out of the question as it is a paid website hosting source. But you&amp;rsquo;re reading this now aren&amp;rsquo;t you? So how did I do it? In this article, it is all laid out for you.&lt;/p&gt;</description>
     </item>
   </channel>
